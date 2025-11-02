@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Page</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Bruna Riguetto</title>
+    <meta description="WDD 131 – Dynamic Web Fundamentals – Bruna Riguetto - First assignment">
+    <meta author="Bruna Riguetto do Nascimento Vasconcelos">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <h1><span id="course-title">WDD 131 – Dynamic Web Fundamentals</span></h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a></li>
+                <li><a href="https://example.com/final-project-folder" target="_blank" rel="noopener noreferrer">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bruna Riguetto Vasconcelos</h1>
+        <section class="card">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <p>
+                    My name is Bruna. I live in Brazil with my family.
+                    I love learning new things, spending time with my daughter,
+                    and exploring new skills like Web Development!
+                </p>
+
+                <img src="images/bruna-portrait.jpg" alt="Photo of Bruna" loading="lazy">
+            </div>
+
+            <h3>Brazil</h3>
+            <hr>
+
+            <div class="country-info">
+                <img src="images/brazil-flag.jpg" alt="Flag of Brazil" width="200" height="120" loading="lazy">
+                <p>
+                    Brazil is the largest country in South America and home to the Amazon rainforest.
+                    It is known for its rich culture, vibrant cities, and beautiful beaches.
+                </p>
+            </div>
+            <p class="caption">Official Flag of Brazil</p>
+        </section>
+
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bruna Riguetto Vasconcelos ~ Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
