@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 999px) {
+
 
 
 * {
@@ -12,6 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media screen and (max-width: 999px) {
 
 header {
   background-color: #4d4d4d;
