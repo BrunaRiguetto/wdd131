@@ -1,0 +1,63 @@
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+main {
+  text-align: center;
+  padding: 1rem;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column — mobile */
+  gap: 1rem;
+}
+
+figure {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}

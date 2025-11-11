@@ -1,0 +1,13 @@
+
+
+nav {
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.album {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
