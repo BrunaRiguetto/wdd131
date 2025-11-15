@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="Page to present a little about Brazil.">
+    <meta name="author" content="Bruna Riguetto do Nascimento Vasconcelos">
+
+    <link rel="stylesheet" href="week03/styles/country-page.css">
+    <link rel="stylesheet" href="week03/styles/country-page-large.css">
+    <script src="week03/country-page.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ===== TITLE ===== -->
+    <header>
+        <h1>Brazil</h1>
+    </header>
+
+    <!-- ===== HERO SECTION (RESPONSIVE SRCSET) ===== -->
+    <section class="hero">
+        <picture>
+            <source srcset="images/rio-mobile.webp" media="(max-width: 600px)">
+            <source srcset="images/rio-medium.webp" media="(max-width: 1024px)">
+            <img src="images/rio-large.webp" 
+                alt="Beautiful view of Rio de Janeiro"
+                width="1200"
+                height="600">
+        </picture>
+    </section>
+
+    <!-- ===== DATA BOX ===== -->
+    <section class="data-box">
+        <h2>Data</h2>
+        <ul>
+            <li><strong>Area:</strong> 8.516.000 km²</li>
+            <li><strong>Population:</strong> 213 millions</li>
+            <li><strong>Capital:</strong> Brasília</li>
+            <li><strong>Language:</strong> Portuguese</li>
+            <li><strong>Currency:</strong> Real (R$)(BRL)</li>
+            <li><strong>Time Zone:</strong> UTC−2 to −5</li>
+        </ul>
+    </section>
+
+    <!-- ===== WEATHER BOX ===== -->
+    <section class="weather-box">
+        <h2>Weather</h2>
+
+        <!-- Small SVG icon for MOBILE view -->
+        <img class="weather-icon-mobile" src="images/weather-icon.svg" alt="Weather icon">
+
+        <ul>
+            <li><strong>Temperature:</strong> <span id="temp-value">23</span>°C</li>
+            <li><strong>Wind Speed:</strong> <span id="wind-value">5</span> km/h</li>
+            <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+
+        </ul>
+
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bruna Riguetto do Nascimento – Londrina, Paraná, Brazil</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

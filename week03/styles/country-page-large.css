@@ -1,0 +1,41 @@
+@media (min-width: 900px) {
+    
+
+
+    /* HERO SECTION becomes a large background-like image */
+    .hero picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Layout Data + Weather over the large hero image */
+    .hero {
+        position: relative;
+    }
+
+    .data-box {
+        position: absolute;
+        top: 150px;
+        left: 30px;
+        width: 250px;
+    }
+
+    .weather-box {
+        position: absolute;
+        top: 150px;
+        right: 30px;
+        width: 250px;
+    }
+
+    /* Remove the mobile SVG icon */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /* Add WEATHER pseudo-element icon ⛅ */
+    .weather-box h2::after {
+        content: " ⛅";
+        font-size: 1.5rem;
+        margin-left: 8px;
+    }
+}
