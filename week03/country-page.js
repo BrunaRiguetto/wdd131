@@ -2,7 +2,7 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 /* Display the document's last modified date */ 
-document.getElementById("lastmodified").textContent = document.lastModified;
+document.getElementById("lastModified").textContent = document.lastModified;
 
 /* WEATHER: Static values (for now) */
 const temperature = 8;     
