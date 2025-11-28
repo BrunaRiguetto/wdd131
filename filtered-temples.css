@@ -1,3 +1,20 @@
+/* Make the temple cards stack better on smaller screens */
+@media screen and (max-width: 600px) {
+  .temple-card {
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+
+  .temple-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #temple-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
