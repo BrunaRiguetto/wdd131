@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temples Album Project for WDD 131 – Dynamic Web Fundamentals - Bruna Riguetto do Nascimento Vasconcelos">
+    <meta name="author" content="Bruna Riguetto do Nascimento Vasconcelos">
+
+    <link rel="stylesheet" href="filtered-temples.css">
+    <link rel="stylesheet" href="filtered-temples-large.css" media="screen and (min-width: 1000px)">
+
+    <script src="filtered-temples.js" defer></script> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-button" aria-label="Toggle menu">☰</button>
+        <nav>
+            <ul class="nav-menu">
+                <li><a id="home">Home</a></li>
+                <li><a id="old">Old</a></li>
+                <li><a id="new">New</a></li>
+                <li><a id="large">Large</a></li>
+                <li><a id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="temples"></div>
+
+        
+    </main>
+
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bruna Riguetto Vasconcelos ~ Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="filtered-temples.js"></script>
+</body>
+</html>
