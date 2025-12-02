@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="css/form.css">
+    <script src="javascript/products.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <!-- PRODUCT NAME -->
+            <label for="product-select">Product Name:</label>
+            <select id="product-select" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- JS will insert product options here -->
+            </select>
+
+            <!-- OVERALL RATING -->
+            <!-- All radio buttons share the same name so only ONE can be selected -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <label for="rate1">
+                    <input type="radio" id="rate1" name="rating" value="1" required>
+                    ☆
+                </label>
+
+                <label for="rate2">
+                    <input type="radio" id="rate2" name="rating" value="2">
+                    ☆☆
+                </label>
+
+                <label for="rate3">
+                    <input type="radio" id="rate3" name="rating" value="3">
+                    ☆☆☆
+                </label>
+
+                <label for="rate4">
+                    <input type="radio" id="rate4" name="rating" value="4">
+                    ☆☆☆☆
+                </label>
+
+                <label for="rate5">
+                    <input type="radio" id="rate5" name="rating" value="5">
+                    ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <!-- DATE OF INSTALLATION -->
+            <label for="install-date">Date of Installation:</label>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <!-- USEFUL FEATURES -->
+            <fieldset>
+                <legend>Useful Features (check all that apply)</legend>
+
+                <label for="feature1">
+                    <input type="checkbox" id="feature1" name="features[]" value="Easy Setup">
+                    Easy Setup
+                </label>
+
+                <label for="feature2">
+                    <input type="checkbox" id="feature2" name="features[]" value="Durability">
+                    Durability
+                </label>
+
+                <label for="feature3">
+                    <input type="checkbox" id="feature3" name="features[]" value="Energy Efficient">
+                    Energy Efficient
+                </label>
+
+                <label for="feature4">
+                    <input type="checkbox" id="feature4" name="features[]" value="Cost Effective">
+                    Cost Effective
+                </label>
+            </fieldset>
+
+            <!-- WRITTEN REVIEW -->
+            <label for="review-text">Written Review:</label>
+            <textarea id="review-text" name="review-text" rows="5"></textarea>
+
+            <!-- USER NAME -->
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username">
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Submit Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Bruna Riguetto do Nascimento Vasconcelos | WDD 131</p>
+    </footer>
+
+</body>
+</html>
